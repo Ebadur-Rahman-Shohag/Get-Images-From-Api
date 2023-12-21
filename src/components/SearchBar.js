@@ -1,6 +1,6 @@
 import React from "react";
 import { useState } from "react";
-import "./SearchBar.css";
+// import "./SearchBar.css";
 
 function SearchBar({ onSubmit }) {
   const handleFormSubmit = (event) => {
@@ -16,10 +16,11 @@ function SearchBar({ onSubmit }) {
   };
 
   return (
-    <div className="search-bar">
-      <form className="search-bar-form" onSubmit={handleFormSubmit}>
-        <label htmlFor="">Enter Your Term</label>
-        <input type="text" onChange={handleChange} value={term} />
+    <div className="form-container">
+      <form className="form" onSubmit={handleFormSubmit}>
+        <label className="label" htmlFor="">Enter Your Term</label>
+        <input className="input-field " type="text" onChange={handleChange} value={term} />
+        <button className="submit-button">Search</button>
       </form>
     </div>
   );

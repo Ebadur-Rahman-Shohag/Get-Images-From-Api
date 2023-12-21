@@ -1,1 +1,76 @@
+/* Reset some default styles for better consistency across browsers */
+body,
+h1,
+h2,
+p,
+input,
+form,
+label {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  background-color:  #a3b949; /* Set a background color for the entire page */
+}
+
+/* Style the form container */
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px; /* Adjust the margin based on your design */
+  background-color:  #a3b949; /* Set a background color for the form container */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+}
+
+/* Style the form */
+.form {
+  width: 300px; /* Adjust the width based on your design */
+}
+
+/* Style the form label */
+.label {
+  margin-bottom: 8px;
+  font-size: 30px;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Adjust the margin based on your design */
+}
+
+/* Style the form input field */
+.input-field {
+  width: 280px;
+  padding: 10px;
+  margin-bottom: 16px; /* Adjust the margin based on your design */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+}
+
+/* Style the submit button */
+/* CSS for a button with gradient color */
+.submit-button {
+  width: 100%;
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  color: #ffffff;
+  background: linear-gradient(to right, #70ff6b, #3b5998); /* Adjust gradient colors as needed */
+  transition: background 0.3s ease;
+}
+
+.submit-button:hover {
+  background: linear-gradient(to right, #12da2c, #8e9eab); /* Adjust hover gradient colors as needed */
+}
 
